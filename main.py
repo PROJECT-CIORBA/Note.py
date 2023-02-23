@@ -81,7 +81,7 @@ file_menu.add_command(
 file_menu.add_separator()
 file_menu.add_command(
     label='Exit',
-    command=ask_save,
+    command=root.destroy,
 )
 menubar.add_cascade(
     label="File",
@@ -112,7 +112,6 @@ menubar.add_cascade(
     underline=0
 )
 
-open_file()
 
 atexit.register(ask_save)
 
